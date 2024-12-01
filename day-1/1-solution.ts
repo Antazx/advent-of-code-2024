@@ -1,16 +1,7 @@
-import { readInput } from "../utils/readInput";
 import { quicksort } from "../utils/quicksort";
+import { LocationList } from ".";
 
-type LocationList = {
-  firstColum: number[];
-  secondColum: number[];
-};
-
-const input = readInput("./day-1/input.txt");
-
-async function main(input: string) {
-  const { firstColum, secondColum } = formatInput(input);
-
+export function main({ firstColum, secondColum }: LocationList): number {
   const sortedFirstColum = quicksort(firstColum);
   const sortedSecondColum = quicksort(secondColum);
 
@@ -23,21 +14,3 @@ async function main(input: string) {
 
   return totalDistance;
 }
-
-function formatInput(input: string): LocationList {
-  const firstColum: number[] = [];
-  const secondColum: number[] = [];
-
-  for (const row of input.split("\n")) {
-    const [first, second] = row.split("   ");
-    firstColum.push(parseInt(first));
-    secondColum.push(parseInt(second));
-  }
-
-  return {
-    firstColum,
-    secondColum,
-  };
-}
-
-main(input);
