@@ -5,7 +5,7 @@
 To run the solutions, you need to install the dependencies and run the following command:
 
 ```
-tsx day-x/index.ts
+npx tsx src/day-x/index.ts
 ```
 
 These are my solutions for the advent of code 2024

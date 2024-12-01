@@ -8,7 +8,7 @@ export type LocationList = {
   secondColum: number[];
 };
 
-const input = readInput("./day-1/input.txt");
+const input = readInput("src/day-1/input.txt");
 const formatedInput = formatInput(input);
 
 measureTime(() => firstSolution(formatedInput), "Day 1: first solution");
