@@ -10,7 +10,12 @@ npx tsx src/day-x/index.ts
 
 These are my solutions for the advent of code 2024
 
-## --- Day 1: Trebuchet?! ---
+## --- Day 1: Historian Hysteria ---
 
-- [Solution 1](/day-1/1-solution.ts) ✅
-- [Solution 2](/day-1/2-solution.ts) ✅
+- [Solution 1](src/day-1/1-solution.ts) ✅
+- [Solution 2](src/day-1/2-solution.ts) ✅
+
+## --- Day 2: Red-Nosed Reports ---
+
+- [Solution 1](src/day-2/1-solution.ts) ✅
+- [Solution 2](src/day-2/2-solution.ts) ✅
