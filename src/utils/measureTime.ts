@@ -5,6 +5,6 @@ export async function measureTime<T>(
   const start = performance.now();
   const result = await callback();
   const end = performance.now();
-  console.log(`${label} took: ${end - start}ms`);
+  console.log(`${label} is: ${result}, took: ${end - start}ms`);
   return result;
 }
