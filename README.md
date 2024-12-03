@@ -19,3 +19,8 @@ These are my solutions for the advent of code 2024
 
 - [Solution 1](src/day-2/1-solution.ts) ✅
 - [Solution 2](src/day-2/2-solution.ts) ✅
+
+## --- Day 3: Mull It Over ---
+
+- [Solution 1](src/day-3/1-solution.ts) ✅
+- [Solution 2](src/day-3/2-solution.ts) ✅
