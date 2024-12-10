@@ -12,16 +12,17 @@ const TILES = {
 } as const;
 
 export function main({ map, initialPosition }: { map: Map; initialPosition: Position }) {
+  let currentMap = structuredClone(map);
   let positionCount = 1;
   let directionIndex = 0;
   let currentPosition = initialPosition;
 
   while (true) {
-    map[currentPosition[0]][currentPosition[1]] = TILES.ALREADY_VISITED_CHAR;
-    const nextPosition = stepForward(map, directionIndex, currentPosition);
+    currentMap[currentPosition[0]][currentPosition[1]] = TILES.ALREADY_VISITED_CHAR;
+    const nextPosition = stepForward(currentMap, directionIndex, currentPosition);
     if (nextPosition === null) break;
 
-    const currentChar = map[nextPosition[0]][nextPosition[1]];
+    const currentChar = currentMap[nextPosition[0]][nextPosition[1]];
     if (currentChar === TILES.CHANGE_DIRECTION_CHAR) {
       directionIndex = getNextDirection(directionIndex);
     } else {

@@ -1,18 +1,18 @@
 import { measureTime } from "../utils/measureTime";
 import { readInput } from "../utils/readInput";
 import { main as firstSolution } from "./1-solution";
-//import { main as secondSolution } from "./2-solution";
+import { main as secondSolution } from "./2-solution";
 
 const STARTING_CHAR = "^";
 export type Map = string[][];
 export type Direction = [number, number];
 export type Position = [number, number];
 
-const input = readInput("src/day-6/input.txt");
+const input = readInput("src/day-6/example.txt");
 const formattedInput = formatInput(input);
 
 measureTime(() => firstSolution(formattedInput), "Day 6: first solution");
-//measureTime(() => secondSolution(input), "Day 6: second solution");
+measureTime(() => secondSolution(formattedInput), "Day 6: second solution");
 
 function formatInput(input: string): {
   map: Map;
