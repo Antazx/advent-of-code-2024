@@ -24,3 +24,8 @@ These are my solutions for the advent of code 2024
 
 - [Solution 1](src/day-3/1-solution.ts) ✅
 - [Solution 2](src/day-3/2-solution.ts) ✅
+
+## --- Day 4: Ceres Search ---
+
+- [Solution 1](src/day-4/1-solution.ts) ✅
+- [Solution 2](src/day-4/2-solution.ts) ✅
