@@ -34,3 +34,7 @@ These are my solutions for the advent of code 2024
 
 - [Solution 1](src/day-5/1-solution.ts) ✅
 - [Solution 2](src/day-5/2-solution.ts) ✅
+
+## --- Day 6: Guard Gallivant ---
+
+- [Solution 1](src/day-6/1-solution.ts) ✅
